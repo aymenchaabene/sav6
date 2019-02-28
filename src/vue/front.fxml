@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontController">
+   <children>
+      <MenuBar prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: #ed2024;">
+        <menus>
+          <Menu mnemonicParsing="false" text="ajouter réclamation">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#lancerajout" text="ajouter réclamation produit" />
+                  <MenuItem mnemonicParsing="false" onAction="#lancerajout1" text="ajouter réclamation prestation" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="mes réclamations">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#lanceraffichage" text="mes réclamations produits" />
+                  <MenuItem mnemonicParsing="false" onAction="#lanceraffichage1" text="mes réclamations prestations" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="notes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#donnernote" text="notes" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="rootpane" layoutX="-1.0" layoutY="28.0" prefHeight="372.0" prefWidth="606.0" style="-fx-background-color: #424142;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0" />
+   </children>
+</AnchorPane>
